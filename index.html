@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+                <title>DrupalCamp Fox Valley</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -27,8 +27,16 @@
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+                <![endif]-->
+
+                <link href="css/theme/drupalcampfv2013/favicon.png" rel="shortcut icon">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+                <script type="text/javascript" src="http://use.typekit.com/nzt1mif.js"></script>
+                <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+        </head>
 
 	<body>
 
@@ -37,12 +45,10 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+                                    <h1>Template Slide Deck</h1>
+                                    <img alt="DrupalCamp Fox Valley" title="DrupalCamp Fox Valley" src="css/theme/drupalcampfv2013/drupalcamp-fox-valley.png">
+                                    <h3>DrupalCamp Fox Valley</h3>
+                                </section>
 
 				<section>
 					<h2>Heads Up</h2>
@@ -363,7 +369,7 @@ function linkify( selector ) {
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				theme: 'drupalcampfv2013', // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
 				// Optional libraries used to extend on reveal.js
