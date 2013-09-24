@@ -15,9 +15,50 @@ html {
     font-family: "adelle",Georgia,serif;
     font-weight: 700;
     margin-top: 0;
-    line-height: 2em;
+}
+
+.reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+    color: #BB0274;
 }
 
 .reveal h1 {
     font-size: 2.5em;
+    margin-bottom: .4em;
+}
+
+.reveal h2 {
+    margin-bottom: .3em;
+}
+
+.reveal h3 {
+    margin-bottom: .3em;
+}
+
+.reveal h4 {
+    margin-bottom: .3em;
+}
+
+a {
+    color: #BB0274;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease-in;}
+
+a:focus {
+    color: #BB0274;
+}
+
+a:active, a:hover {
+    outline: 0 none;
+}
+
+a:hover {
+    color: #BBA602;
+    text-decoration: underline;
+}
+
+.reveal img.logo {
+    margin: 1em;
+
 }
