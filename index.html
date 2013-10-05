@@ -1,13 +1,11 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
+		<title>Get started with Sass & Compass | DrupalCamp Fox Valley 2013</title>
 
-                <title>DrupalCamp Fox Valley</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="An introductory session on getting up and running with Sass and Compass for theming in Drupal">
+		<meta name="author" content="Jason Bell">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -26,335 +24,797 @@
 		</script>
 
 		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-                <![endif]-->
+			<script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
 
-                <link href="css/theme/drupalcampfv2013/favicon.png" rel="shortcut icon">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link href="css/theme/drupalcampfv2013/favicon.png" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-                <script type="text/javascript" src="http://use.typekit.com/nzt1mif.js"></script>
-                <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://use.typekit.com/nzt1mif.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-        </head>
+	</head>
 
 	<body>
-
 		<div class="reveal">
-
-			<!-- Any section element inside of this container is displayed as a slide -->
+		<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-                                    <h1>Template Slide Deck</h1>
-                                    <img class="logo" alt="DrupalCamp Fox Valley" title="DrupalCamp Fox Valley" src="css/theme/drupalcampfv2013/drupalcamp-fox-valley.png">
-                                    <h3>By the the Organizers of the Fox Valley Drupal Meetup Group</h3>
-                                </section>
+        <section>
+	        <h1>Get started with Sass & Compass</h1>
+	        <img class="logo" alt="DrupalCamp Fox Valley" title="DrupalCamp Fox Valley" src="css/theme/drupalcampfv2013/drupalcamp-fox-valley.png">
+	        <h3>5 October 2013</h3>
+		    </section>
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+        <section>
+          <h1>Jason Bell</h1>
+          <p>I build pieces of the web at <a href="http://startinteraction.com">Start Interaction</a>.</p>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+          <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73703/solid-teal.png" style="width: 200.9891027249289px; height: 171.3125901222229px; max-height: none; max-width: none;">
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+          <div class="fragment" data-fragment-index="0">
+            <p>I am various permutations of myself on…</p>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
+            <ul>
+              <li>
+                <a href="http://twitter.com/j_bell" style="text-align: center;">Twitter</a><span style="text-align: center;">—@j_bell</span>
+              </li>
+              <li>
+                <a href="https://alpha.app.net/jasonbell" style="text-align: center;">App.net</a><span style="text-align: center;">—@jasonbell</span>
+              </li>
+              <li>
+                <a href="https://drupal.org/user/392435" style="text-align: center;">Drupal.org</a><span style="text-align: center;">—jason.bell</span>
+              </li>
+            </ul>
+          </div>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+          <div class="fragment" data-fragment-index="1">
+            <p>I help organize <a href="http://www.meetup.com/The-Fox-Valley-Drupal-Meetup-Group/">Fox Valley Drupal</a>.</p>
+          </div>
+        </section>
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
+        <section>
+          <section>
+            <h1>Sass</h1>
+            <ul>
+              <li>
+                <span style="text-align: center;">Sass is a preprocessor for CSS that will help you fall in love with CSS all over again.</span>
+              </li>
+              <li>
+                <span style="text-align: center;">Sass is written in Ruby and distributed via RubyGems.</span>
+              </li>
+              <li>
+                <span style="text-align: center;">There are 2 syntaxes. Both work.</span>
+                <ul>
+                  <li>
+                    <span style="text-align: center;">.sass = old</span>
+                  </li>
+                  <li>
+                    <span style="text-align: center;">.scss = new, more common, just use it</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+          <section>
+            <h1>Installing Sass</h1>
+            <p>It's slightly different by platform, but essentially boils down to the following command:</p>
+<pre><code class="big-code" data-trim>
+gem install sass
+</code></pre>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+          </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+          <section>
+            <h1>Create a Sass project</h1>
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+            <p>Every valid CSS3 stylesheet is valid .scss. You can change the extension of an existing file to get rolling.</p>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+            <p>From your project directory run:</p>
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+<pre><code class="big-code" data-trim>
+sass --watch style.scss:style.css
+</code></pre>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
+            <p>This will compile your .scss file into a .css file.</p>
+          </section>
+        </section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+        <section>
+          <h1>Variables</h1>
+          <p>Use variables to store values you use all over the place.</p>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
+          <div style="float:left; width: 49%; margin: 0 1% 0 0">
+            <h3>Sass</h3>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+            <pre>
+<code data-trim>
+$black: rgb(30, 30, 30);
+$green: rgb(116, 187, 2);
+$base-font-size:   16px;
+$base-line-height: 20px;
 
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
+body {
+  color: $black;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  padding: $base-font-size*2;
+}
 
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
+h1 {
+  color: $green;
+}
+</code>
+            </pre>
+          </div>
 
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
+          <div style="float:right; width: 49%; margin: 0 0 0 1%">
+            <h3>CSS</h3>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+            <pre>
+<code data-trim>
+body {
+  color: #1e1e1e;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 32px;
+}
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+h1 {
+  color: #74bb02;
+}
+</code>
+            </pre>
+          </div>
+        </section>
 
-    var nodes = document.querySelectorAll( selector );
+        <section>
+          <h1>Nesting</h1>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+          <p>Stop repeating yourself and doing things over again.</p>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
+          <div style="float:left; width: 49%; margin: 0 1% 0 0">
+            <h2>Then</h2>
+<pre><code data-trim>
+footer {
+  border-top: 1px solid $black;
+  background-image: linear-gradient(top, #555, #333);
+}
+
+footer p {
+  font-size: $base-font-size*.8;
+}
+
+footer p.legal {
+  float: left;
+}
+
+.no-cssgradients footer {
+  background: url("images/glossy.png");
+}
+</code></pre>
+          </div>
+
+          <div style="float:right; width: 49%; margin: 0 0 0 1%">
+            <h2>Now</h2>
+<pre><code data-trim>
+footer {
+  border-top: 1px solid $black;
+
+  .no-cssgradients & {
+    background: image-url("glossy.png");
+  }
+
+  p {
+    font-size: $base-font-size*.8;
+
+    a {
+      color: $green;
+    }
+
+    &.legal {
+      float: left;
     }
   }
 }
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+</code></pre>
+          </div>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+        </section>
 
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+        <section>
+          <h1>Mixins</h1>
+          <p>Create reusable chunks of CSS properties with <code>@mixin</code> and apply with <code>@include</code>.</p>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+          <div style="float:left; width: 49%; margin: 0 1% 0 0">
+<pre><code data-trim>
+$sans-serif: "Helvetica Neue", sans-serif;
+$serif: Georgia, serif;
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+@mixin font-body {
+  font-family: $sans-serif;
+  font-weight: 400;
+}
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+@mixin font-headers {
+  font-family: $serif;
+  font-weight: 400;
+}
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+body {
+  @include font-body;
+}
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+h1 {
+  @include font-headers;
+}
+</code></pre>
+          </div>
+          <div style="float:right; width: 49%; margin: 0 0 0 1%">
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+<pre><code data-trim>
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
 
-			</div>
+h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+</code></pre>
 
-		</div>
+          </div>
+        </section>
+
+        <section>
+          <h1>Inheritance</h1>
+          <p>One selector can inherit properties from another without duplication using <code>@extend</code>.</p>
+
+          <div style="float:left; width: 49%; margin: 0 1% 0 0">
+            <h3>Sass</h3>
+<pre><code data-trim>
+.error {
+  border: 1px #f00;
+  background: #fdd;
+}
+.error.intrusion {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.badError {
+  @extend .error;
+  border-width: 3px;
+}
+</code></pre>
+          </div>
+          <div style="float:right; width: 49%; margin: 0 0 0 1%">
+            <h3>CSS</h3>
+
+<pre><code data-trim>
+.error, .badError {
+  border: 1px #f00;
+  background: #fdd;
+}
+
+.error.intrusion,
+.badError.intrusion {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.badError {
+  border-width: 3px;
+}
+</code></pre>
+
+          </div>
+        </section>
+
+        <section>
+          <h1>Extend placeholder</h1>
+          <p>Instead of a class you can create a set of properties that don't write directly to the CSS unless applied with <code>@extend</code>.</p>
+
+          <div style="float:left; width: 49%; margin: 0 1% 0 0">
+            <h3>Sass</h3>
+<pre><code data-trim>
+%message {
+  border: 1px black;
+  border-radius: 5px;
+  font-size: .9em;
+}
+
+.error {
+  @extend %message;
+  background: red;
+}
+
+.success {
+  @extend %message;
+  background: green;
+}
+</code></pre>
+          </div>
+          <div style="float:right; width: 49%; margin: 0 0 0 1%">
+            <h3>CSS</h3>
+
+<pre><code data-trim>
+.error, .success {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: .9em;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+
+.error {
+  background: red;
+}
+
+.success {
+  background: green;
+}
+</code></pre>
+
+          </div>
+        </section>
+
+        <section>
+          <h1>Mixin, Extend or Class?</h1>
+          <p>Decide what works best in your project. Mixins can create duplicate CSS</p>
+          <ul>
+            <li>Do you want your HTML filled with classes?</li>
+            <li>Do you want a little bit of duplication in your compiled CSS?</li>
+          </ul>
+
+          <blockquote cite="http://8gramgorilla.com/mastering-sass-extends-and-placeholders/">
+            <p>As a rule of thumb, it’s better to never extend a class selector and always to use a placeholder selector in it’s place instead.</p>
+            <b><a href="http://8gramgorilla.com/mastering-sass-extends-and-placeholders/">Chris Lamb</a></b>
+          </blockquote>
+        </section>
+
+        <section>
+          <section>
+            <h1>Compass</h1>
+            <p>
+              Compass is a collection of helpful tools and battle-tested best practices for Sass.
+            </p>
+            <ul>
+              <li>
+                Compass is a CSS authoring framework that uses Sass.
+              </li>
+              <li>
+                Compass is written in Ruby and distributed via RubyGems.
+              </li>
+              <li>
+                Compass is project aware. It helps manage images, scripts and fonts too.</a>.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Installing Compass</h1>
+            <p>It's slightly different by platform, but essentially boils down to the following command:</p>
+<pre><code class="big-code" data-trim>
+gem install compass
+</code></pre>
+            <h2>Just getting started?</h2>
+            <p>Install compass and Sass will be installed for you.</p>
+            <p>
+              <a href="http://snugug.com/musings/installing-sass-and-compass-across-all-platform">http://snugug.com/musings/installing-sass-and-compass-across-all-platform</a>
+            </p>
+          </section>
+
+          <section>
+            <h1>Create a Compass project</h1>
+
+            <p>Compass will create a project directory for you. If you’re creating a new Drupal theme…</p>
+
+<pre><code class="big-code" data-trim>
+cd sites/all/themes
+compass create theme_name
+</code></pre>
+
+            <p>This will create a directory called "theme_name" with subdirectories and a config.rb file.</p>
+          </section>
+
+          <section>
+          	<ul>
+          		<li>config.rb</li>
+          		<li>index.html</li>
+          		<li>images</li>
+          		<li>sass</li>
+          		<li>stylesheets</li>
+          	</ul>
+          </section>
+
+          <section>
+          	<h1>config.rb</h1>
+          	<p>This is the configuration file for your Compass project.</p>
+          	<pre><code class="big-code" data-trim>
+# Require any additional compass plugins here.
+
+# Set this to the root of your project when deployed:
+http_path = "/"
+css_dir = "stylesheets"
+sass_dir = "sass"
+images_dir = "images"
+javascripts_dir = "javascripts"
+
+# You can select your preferred output style here (can be overridden via the command line):
+# output_style = :expanded or :nested or :compact or :compressed
+
+# To enable relative paths to assets via compass helper functions. Uncomment:
+# relative_assets = true
+
+# To disable debugging comments that display the original location of your selectors. Uncomment:
+# line_comments = false
+
+
+# If you prefer the indented syntax, you might want to regenerate this
+# project again passing --syntax sass, or you can uncomment this:
+# preferred_syntax = :sass
+# and then run:
+# sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+
+          	</code></pre>
+          </section>
+
+          <section>
+            <h1>Use Compass</h1>
+
+            <p>Compass uses its own compiler. So now instead of</p>
+
+<pre><code class="big-code" data-trim>
+sass --watch style.scss:style.css
+</code></pre>
+
+            <p>we now use</p>
+
+<pre><code class="big-code" data-trim>
+compass watch
+</code></pre>
+
+            <p>Compass is now watching for changes and will compile when you save files with changes.</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Compass Core</h1>
+            <p>Compass provides a robust set of code patterns for re-use.</p>
+            <ul>
+              <li>CSS3: cross-browser mixins</li>
+              <li>Typography: common typographic patterns</li>
+              <li>Utilities: common style patterns</li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>CSS3</h1>
+            <p>Compass writes out CSS3 properties with browser fallbacks.</p>
+
+            <div style="float:left; width: 49%; margin: 0 1% 0 0">
+              <h3>Sass</h3>
+<pre><code data-trim>
+%message {
+  @include border-radius(3px);
+  @include box-shadow();
+  border: 1px black;
+}
+
+.error {
+  @extend %message;
+  background: red;
+}
+
+.success {
+  @extend %message;
+  background: green;
+}
+</code></pre>
+            </div>
+
+            <div style="float:right; width: 49%; margin: 0 0 0 1%">
+              <h3>CSS</h3>
+
+<pre><code data-trim>
+.error, .success {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 10px 2px #323232;
+  -moz-box-shadow: 0 2px 10px 2px #323232;
+  box-shadow: 0 2px 10px 2px #323232;
+  border: 1px black;
+  margin-bottom: 1em;
+}
+
+.error {
+  background: red;
+}
+
+.success {
+  background: green;
+}
+</code></pre>
+
+            </div>
+          </section>
+
+          <section>
+            <h1>Typography</h1>
+            <p>Compass ships with a very powerful (and slightly confusing) vertical rhythm system.</p>
+
+            <div style="float:left; width: 49%; margin: 0 1% 0 0">
+              <h3>Sass</h3>
+<pre><code data-trim>
+@include establish-baseline;
+h1 {
+  @include adjust-font-size-to(39px);
+  @include rhythm(0, 0, 0, 1, 39px);
+}
+</code></pre>
+            </div>
+            <div style="float:right; width: 49%; margin: 0 0 0 1%">
+              <h3>CSS</h3>
+
+<pre><code data-trim>
+html {
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+h1 {
+  font-size: 2.4375em; 39px/16
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.51282em;
+}
+</code></pre>
+
+            </div>
+          </section>
+
+          <section>
+            <h1>Utilities</h1>
+            <p>Compass has some great utilities for text, lists, image replacement, and more.</p>
+
+            <div style="float:left; width: 49%; margin: 0 1% 0 0">
+              <h3>Sass</h3>
+<pre><code data-trim>
+nav {
+  ul {
+    @include inline-block-list(1em);
+  }
+}
+
+#{headings(1,4)} {
+  @include font-headers;
+
+  a {
+    @include link-colors(inherit, $hover, $active, inherit, $focus);
+  }
+}
+
+</code></pre>
+            </div>
+
+            <div style="float:right; width: 49%; margin: 0 0 0 1%">
+              <h3>CSS</h3>
+
+<pre><code data-trim>
+nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+}
+
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited {
+  color: inherit;
+}
+
+h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus {
+  color: #448087;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+  color: #448087;
+}
+
+h1 a:active, h2 a:active, h3 a:active, h4 a:active {
+  color: #141414;
+}
+</code></pre>
+
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Compass Extensions</h1>
+            <p>Compass extensions allow for the inclusion of stylesheet libraries, templates, patterns, and more.</p>
+            <h3>My current favorites</h3>
+
+            <ul>
+              <li><a href="https://github.com/Team-Sass/breakpoint">Breakpoint</a>: Really Simple Media Queries</li>
+              <li><a href="https://github.com/Team-Sass/Singularity">Singularity</a>: Grids Without Limits</li>
+              <li><a href="http://jaredhardy.com/sassy-buttons/">Sassy Buttons</a>: Beautiful buttons</li>
+              <li><a href="https://github.com/Team-Sass/toolkit">Toolkit</a>: your swiss army knife for Progressive Enhancement and Responsive Web Design</li>
+            </ul>
+
+          </section>
+          <section>
+            <h2>Using Compass Extensions</h2>
+
+            <div class="fragment" data-fragment-index="0">
+              <p>On the command line</p>
+              <pre><code>
+                gem install {extension}
+              </code></pre>
+            </div>
+
+            <div class="fragment" data-fragment-index="1">
+              <p>In your <code>config.rb</code> file</p>
+              <pre><code>
+                require '{extension}'
+              </code></pre>
+            </div>
+
+            <div class="fragment" data-fragment-index="2">
+              <p>In your SCSS base</p>
+              <pre><code>
+                @import '{extension}'
+              </code></pre>
+            </div>
+          </section>
+
+          <section>
+            <h2>Breakpoint</h2>
+            <p>Set breakpoint variables and do amazing things!</p>
+
+<pre><code>
+// Your basic media queries, min-width and min/max width, are super easy!
+$basic: 543px;
+$pair: 456px 794px;
+
+#foo {
+  content: 'No Media Queries';
+
+  @include breakpoint($basic) {
+    content: 'Basic Media Query';
+  }
+
+  @include breakpoint($pair) {
+    content: 'Paired Media Query';
+  }
+}
+</code></pre>
+          </section>
+
+          <section>
+            <h2>Singularity</h2>
+            <p>A ratio based grid framework that helps you leave 960 in the dust! Works well with Breakpoint too.</p>
+
+<pre><code>
+$grids: 12;
+$grids: add-grid(2 8 2 at $desk);
+$gutters: 1/3;
+
+article {
+  @include breakpoint($desk) {
+    @include grid-span(8, 3);
+  }
+}
+
+aside {
+  @include breakpoint($desk) {
+    @include grid-span(2, 1);
+  }
+}
+</code></pre>
+          </section>
+
+          <section>
+            <h2>Sassy Buttons</h2>
+
+<pre><code>
+button {
+  @include sassy-button("shiny", 15px, 26px, #ffd71a, #ffaa1a);
+}
+</code></pre>
+          </section>
+
+          <section>
+            <h2>Toolkit</h2>
+            <p>Toolkit bundles a bunch of useful responsive tools into one, well… toolkit.</p>
+            <ul>
+              <li>Border Box</li>
+              <li>Fluid Media</li>
+              <li>Progressive Enhancement</li>
+              <li>Clearfix</li>
+              <li>Vertical Center</li>
+              <li>Color Functions</li>
+              <li>other stuff</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h1>Sass & Compass with Drupal</h1>
+          <p>Yes, there are Drupal modules with these names.</p>
+          <ul>
+            <li><a href="https://drupal.org/project/sass">SASS/SCSS</a></li>
+            <li><a href="https://drupal.org/project/compass">Compass stylesheet tool</a></li>
+          </ul>
+          <p class="fragment" data-fragment-index="0">No. I have not used these. I'm not entirely sure why you would want to.</p>
+          <p class="fragment" data-fragment-index="1">Sass and Compass are authoring tools, not server side components.</p>
+        </section>
+        <section>
+          <h1>Resources</h1>
+          <p>Use your favorite search engine to find thousands of articles to help you.</p>
+          <p>Read <a href="http://snugug.github.io/RWD-with-Sass-Compass/#/thank-you">this presentation</a> from Sam Richard for more depth on what we covered.</p>
+
+          <div style="float:left; width: 49%; margin: 0 1% 0 0">
+            <h3>Sass</h3>
+            <ul>
+              <li><a href="http://sass-lang.com">http://sass-lang.com</a></li>
+              <li><a href="http://thesassway.com">http://thesassway.com</a></li>
+              <li><a href="http://sassmeister.com">http://sassmeister.com</a></li>
+            </ul>
+          </div>
+
+          <div style="float:right; width: 49%; margin: 0 0 0 1%">
+            <h3>Compass</h3>
+            <ul>
+              <li><a href="http://compass-style.org">http://compass-style.org</a></li>
+              <li><a href="http://atendesigngroup.com/blog/vertical-rhythm-compass">Vertical Rhythm with Compass</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+        	<h1>Questions?</h1>
+          <p><a href="http://jasonbell.github.io/dcfv13-sass-compass/">http://jasonbell.github.io/dcfv13-sass-compass/</a></p>
+        </section>
+      </div>
+    </div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
