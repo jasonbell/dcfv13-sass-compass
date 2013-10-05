@@ -178,12 +178,12 @@ h1 {
             <h2>Then</h2>
 <pre><code data-trim>
 footer {
-  border-top: 1px solid $black;
+  border-top: 1px solid #000;
   background-image: linear-gradient(top, #555, #333);
 }
 
 footer p {
-  font-size: $base-font-size*.8;
+  font-size: 13px;
 }
 
 footer p.legal {
@@ -228,6 +228,7 @@ footer {
           <p>Create reusable chunks of CSS properties with <code>@mixin</code> and apply with <code>@include</code>.</p>
 
           <div style="float:left; width: 49%; margin: 0 1% 0 0">
+          <h3>Sass</h3>
 <pre><code data-trim>
 $sans-serif: "Helvetica Neue", sans-serif;
 $serif: Georgia, serif;
@@ -252,7 +253,7 @@ h1 {
 </code></pre>
           </div>
           <div style="float:right; width: 49%; margin: 0 0 0 1%">
-
+          <h3>CSS</h3>
 <pre><code data-trim>
 body {
   font-family: "Helvetica Neue", sans-serif;
@@ -710,19 +711,20 @@ h1 a:active, h2 a:active, h3 a:active, h4 a:active {
             <p>Set breakpoint variables and do amazing things!</p>
 
 <pre><code>
-// Your basic media queries, min-width and min/max width, are super easy!
-$basic: 543px;
-$pair: 456px 794px;
+// Your basic media queries, min-width and min/max width,
+// are super easy!
+$medium: 450px;
+$large: 750px;
 
 #foo {
-  content: 'No Media Queries';
+  font-size: $base-font-size;
 
-  @include breakpoint($basic) {
-    content: 'Basic Media Query';
+  @include breakpoint($medium) {
+    font-size: $base-font-size*1.2;
   }
 
-  @include breakpoint($pair) {
-    content: 'Paired Media Query';
+  @include breakpoint($large) {
+    font-size: $base-font-size*1.5;
   }
 }
 </code></pre>
@@ -732,20 +734,25 @@ $pair: 456px 794px;
             <h2>Singularity</h2>
             <p>A ratio based grid framework that helps you leave 960 in the dust! Works well with Breakpoint too.</p>
 
-<pre><code>
-$grids: 12;
-$grids: add-grid(2 8 2 at $desk);
-$gutters: 1/3;
+<pre><code>$grids: 4; //4 grid units
+$grids: add-grid(12 at $medium); //12 grid units
+$gutters: 1/3; //gutters are 1/3 of 1 unit
 
 article {
-  @include breakpoint($desk) {
-    @include grid-span(8, 3);
+  @include breakpoint($medium) {
+    @include grid-span(6, 1);
+  }
+  @include breakpoint($large) {
+    @include grid-span(8, 1);
   }
 }
 
 aside {
-  @include breakpoint($desk) {
-    @include grid-span(2, 1);
+  @include breakpoint($medium) {
+    @include grid-span(6, 7);
+  }
+  @include breakpoint($large) {
+    @include grid-span(4, 9);
   }
 }
 </code></pre>
@@ -754,8 +761,7 @@ aside {
           <section>
             <h2>Sassy Buttons</h2>
 
-<pre><code>
-button {
+<pre><code>button {
   @include sassy-button("shiny", 15px, 26px, #ffd71a, #ffaa1a);
 }
 </code></pre>
@@ -767,7 +773,7 @@ button {
             <ul>
               <li>Border Box</li>
               <li>Fluid Media</li>
-              <li>Progressive Enhancement</li>
+              <li>Intrinsic ratios</li>
               <li>Clearfix</li>
               <li>Vertical Center</li>
               <li>Color Functions</li>
@@ -789,7 +795,7 @@ button {
         <section>
           <h1>Resources</h1>
           <p>Use your favorite search engine to find thousands of articles to help you.</p>
-          <p>Read <a href="http://snugug.github.io/RWD-with-Sass-Compass/#/thank-you">this presentation</a> from Sam Richard for more depth on what we covered.</p>
+          <p>Read <a href="http://snugug.github.io/RWD-with-Sass-Compass/#/thank-you">this presentation</a> from Sam Richard (@snugug) for more depth on what we covered.</p>
 
           <div style="float:left; width: 49%; margin: 0 1% 0 0">
             <h3>Sass</h3>
